@@ -17,7 +17,7 @@ app.get("/weather", (request, response) => {
 
   const filteredCity = data.find((city) => {
     return (
-      city.city_name === searchQuery && city.lat === lat && city.lon === lon
+      city.city_name === searchQuery // && city.lat === lat && city.lon === lon
     );
   });
 
